@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloJQuery", "HelloJQuery\HelloJQuery.csproj", "{755E4A8F-8015-46C9-A769-35585ADFAB15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{755E4A8F-8015-46C9-A769-35585ADFAB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755E4A8F-8015-46C9-A769-35585ADFAB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755E4A8F-8015-46C9-A769-35585ADFAB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{755E4A8F-8015-46C9-A769-35585ADFAB15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE9A7AA9-CAA6-47DE-85D9-931068AE2CC6}
+	EndGlobalSection
+EndGlobal

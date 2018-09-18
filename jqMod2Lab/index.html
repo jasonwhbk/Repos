@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Module 2 Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Verdana;
+        }
+    
+        h1,
+        h2,
+        h3 {
+            color: darkblue;
+        }
+    
+        .rating-circle {
+            height: 2em;
+            width: 2em;
+            border: .1em solid black;
+            border-radius: 1.1em;
+            display: inline-block;
+            margin: 0;
+            padding: .1em;
+        }
+    
+        .rating-hover {
+            background-color: yellow;
+        }
+    
+        .rating-chosen {
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Contoso Web Developer Conference</h1>
+    <h2>Finding elements using jQuery</h2>
+    <div>This session is about identifying elements using jQuery methods and selectors.</div>
+    <h3>Rate this session</h3>
+    <div id="rating-container" max-value="5">
+        <div class="rating-circle"></div>
+        <div class="rating-circle"></div>
+        <div class="rating-circle"></div>
+        <div class="rating-circle"></div>
+        <div class="rating-circle"></div>
+    </div>
+   
+   <div>
+     <label for="max-value">Enter max value:</label>
+     <input type="text" id="max-value" />
+     <button type="button" id="update-max-value">Update max value</button>
+   </div>
+
+   <div id='submit-rating'>
+        <button type="button" id="save-rating">Save rating</button>
+        <div id="output"></div>
+   </div>
+
+    <script>
+        // your answer would go here
+        // click event
+        // raised when the item is clicked
+        var maxVal = 5;
+        var isGreen = false;
+        var ratingIndex = 0;
+     
+        
+        $(document).on({
+            click: function() {
+                $('.rating-circle').each(function () {
+                $(this).removeClass('rating-chosen');
+            });
+            if (!isGreen) {
+                ratingIndex = ($(this).index()) + 1;
+                $(this).addClass('rating-chosen')
+                $(this).prevAll().addClass('rating-chosen');
+                isGreen = true;
+            } else {
+                ratingIndex=0;
+                isGreen = false;
+                $(this).prevAll().removeClass('rating-chosen');
+                $(this).removeClass('rating-chosen');
+            }},
+            mouseenter: function () {
+            // alert('hover!!');
+            $(this).addClass('rating-hover');
+        },
+            mouseleave: function () {
+            $(this).removeClass('rating-hover');
+            }
+        }, '.rating-circle');
+       
+        // handle max value input
+        $('#update-max-value').click(function () {
+            maxVal = $('#max-value').val();
+            $('#max-value').val('');
+        // remove items and replace with maxvalue.
+            $('#rating-container').empty();
+            var divCount = 1;
+            $('#rating-container').append('<div class="rating-circle"></div>');
+            while (divCount < maxVal) {
+                divCount = divCount +1;
+                $('<div class="rating-circle"></div>').appendTo('#rating-container');
+             };
+        });
+        
+        // Submit rating
+        $('#save-rating').click(function () {
+            //create JSON
+            var ratingSubmitted = {value: ratingIndex, maxValue: maxVal};
+           // ratingSubmitted.value = ratingIndex;
+           // ratingSubmitted.maxValue = maxVal;
+            var jsonString = JSON.stringify(ratingSubmitted);
+
+            $.post('http://jquery-edx.azurewebsites.net/api/Rating', ratingSubmitted).done(function(data) {
+                $('#output').text(data.message);
+            });
+
+
+        });
+      
+    </script>
+</body>
+</html>

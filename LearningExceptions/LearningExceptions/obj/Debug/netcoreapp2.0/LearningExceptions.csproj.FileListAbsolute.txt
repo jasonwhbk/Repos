@@ -1,0 +1,10 @@
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\obj\Debug\netcoreapp2.0\LearningExceptions.csproj.CoreCompileInputs.cache
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\obj\Debug\netcoreapp2.0\LearningExceptions.AssemblyInfoInputs.cache
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\obj\Debug\netcoreapp2.0\LearningExceptions.AssemblyInfo.cs
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\bin\Debug\netcoreapp2.0\LearningExceptions.deps.json
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\bin\Debug\netcoreapp2.0\LearningExceptions.runtimeconfig.json
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\bin\Debug\netcoreapp2.0\LearningExceptions.runtimeconfig.dev.json
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\bin\Debug\netcoreapp2.0\LearningExceptions.dll
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\bin\Debug\netcoreapp2.0\LearningExceptions.pdb
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\obj\Debug\netcoreapp2.0\LearningExceptions.dll
+C:\Users\jason\source\repos\LearningExceptions\LearningExceptions\obj\Debug\netcoreapp2.0\LearningExceptions.pdb

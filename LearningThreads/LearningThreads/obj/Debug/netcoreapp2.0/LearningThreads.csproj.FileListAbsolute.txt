@@ -1,0 +1,10 @@
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\bin\Debug\netcoreapp2.0\LearningThreads.deps.json
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\bin\Debug\netcoreapp2.0\LearningThreads.runtimeconfig.json
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\bin\Debug\netcoreapp2.0\LearningThreads.runtimeconfig.dev.json
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\bin\Debug\netcoreapp2.0\LearningThreads.dll
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\bin\Debug\netcoreapp2.0\LearningThreads.pdb
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\obj\Debug\netcoreapp2.0\LearningThreads.csproj.CoreCompileInputs.cache
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\obj\Debug\netcoreapp2.0\LearningThreads.AssemblyInfoInputs.cache
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\obj\Debug\netcoreapp2.0\LearningThreads.AssemblyInfo.cs
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\obj\Debug\netcoreapp2.0\LearningThreads.dll
+C:\Users\jason\source\repos\LearningThreads\LearningThreads\obj\Debug\netcoreapp2.0\LearningThreads.pdb

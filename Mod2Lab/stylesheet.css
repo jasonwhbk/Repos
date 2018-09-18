@@ -1,0 +1,343 @@
+/*
+Color List:
+- light blue = 00AEEF;
+- dark blue = 1C75BC
+- green = 8DC63F
+- dark green = 009444
+- orange = F7941E
+- dark orange = F15A29
+- brown = 594a42;
+*/
+
+/***************************
+****************************
+Reset
+****************************
+***************************/
+@import 'normalize.css';
+
+/* Change all elements to use border-box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/***************************
+****************************
+Base Styles
+****************************
+***************************/
+
+
+/***************************
+****************************
+Layout Styles
+****************************
+***************************/
+/* Content Container*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+/* Row */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* Row Clear Float*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Media Query excludes extra small devices and includes small and above */
+[class*='col-'] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 48em) {
+  [class*='col-'] {
+    float: left;
+  }
+  /* Column Two Thirds */
+  .col-2-3 {
+    width: 66.6666%;
+  }
+  /* Column Third */
+  .col-1-3 {
+    width: 33.3333%;
+  }
+
+  .col-1-2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 48em) {
+  .pull-right-sm {
+    float:right;
+  }
+}
+
+@media only screen and (max-width : 47.9375em) {
+  .remove-gutter-xs {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/***************************
+****************************
+Modules
+****************************
+***************************/
+
+/**************Button Modules**************/
+.btn{
+  display:inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary, .btn-nav{
+  background: #8DC63F;
+  border-color: #8DC63F;
+  color: white;
+  font-size: 1.125em;
+  padding: 10px 30px;
+  opacity: 1;
+}
+
+.btn-primary:hover, .btn-nav:hover{
+  background: none;
+  border-color: white;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.btn-hero {
+  background: none;
+  color: white;
+  padding: 15px, 30px;
+  border-radius: 4px;
+  font-size: 1.750em;
+  border: 1px solid white;
+  height: 60px;
+}
+
+.btn-hero:hover{
+  background: white;
+  color: #39B54A;
+  opacity: 1;
+}
+
+/*
+.btn-nav{
+  color: white;
+} */
+
+.btn-toggle-menu{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+@media (min-width: 48em){
+  .btn-toggle-menu{
+    display: none;
+  }
+}
+
+/**************Header Modules**************/
+.header-primary{
+  background: #9B8579;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px; 
+}
+
+/* Logo Modules */
+.logo{
+  overflow: hidden;
+  display: inline-block;
+}
+
+.logo-primary{
+  width: 64px;
+  height: 64px;
+}
+
+.logo-primary img {
+  height: 100%;
+}
+
+/************** Navigation Modules **************/
+.nav > ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav-primary {
+  margin-top: 35px;
+  display: none;
+}
+
+@media (min-width: 48em){
+  .nav-primary {
+    display: block;
+  }
+}
+
+/************** Hero Modules **************/
+.hero{
+  text-align: center;
+}
+
+.hero-primary{
+  background-color: #594a42;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hero-primary.bg-image > img {
+  opacity: 0.55;
+}
+
+.hero-body {
+  position: relative;
+}
+
+.hero-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 2.625em;
+}
+
+.hero-subtitle{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.500em;
+  font-weight: normal;
+}
+
+.hero-subtitle + button{
+  margin-top: 25px;
+}
+
+/************** Testimonial Modules **************/
+
+.testimonial-primary{
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+ padding-bottom: 40px;
+  
+}
+
+.testimonial-primary.bg-image > img {
+  opacity: 0.95;
+}
+
+.testimonial-body {
+  margin-top: 25px;
+  position: relative;
+  font-size: 2.00em;
+}
+
+.testimonial-stars{
+  float: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 8px darkslategrey;
+  font-size: 1.75em;
+  padding: 10px;
+  margin: 10px;
+ 
+
+}
+
+.testimonnial-stars i{
+ 
+ 
+  text-align: center;
+}
+
+
+
+/************** Background Modules **************/
+
+.bg-image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-image > img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+}
+
+/************** Media Object Modules **************/
+
+.media, .media-body {
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.media-item {
+  float: left;
+  margin-right: 10px;
+
+}
+
+.media-item i{
+  color: #594a42;
+  font-size: 5em;
+}
+
+
+/***************************
+****************************
+Theme Styles
+****************************
+***************************/
+.background-primary {
+  background: #F7941E;
+}
+.background-secondary {
+  background: #00AEEF;
+}
+.background-tertiary {
+  background: #8DC63F;
+}
+.background-quaternary {
+  background: #594a42;
+}
+.background-quinary {
+  background: #C2B59B
+}

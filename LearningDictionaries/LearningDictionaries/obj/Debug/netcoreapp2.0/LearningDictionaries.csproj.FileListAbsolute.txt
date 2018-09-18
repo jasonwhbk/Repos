@@ -1,0 +1,11 @@
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\obj\Debug\netcoreapp2.0\LearningDictionaries.csprojAssemblyReference.cache
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\obj\Debug\netcoreapp2.0\LearningDictionaries.csproj.CoreCompileInputs.cache
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\obj\Debug\netcoreapp2.0\LearningDictionaries.AssemblyInfoInputs.cache
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\obj\Debug\netcoreapp2.0\LearningDictionaries.AssemblyInfo.cs
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\bin\Debug\netcoreapp2.0\LearningDictionaries.deps.json
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\bin\Debug\netcoreapp2.0\LearningDictionaries.runtimeconfig.json
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\bin\Debug\netcoreapp2.0\LearningDictionaries.runtimeconfig.dev.json
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\bin\Debug\netcoreapp2.0\LearningDictionaries.dll
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\bin\Debug\netcoreapp2.0\LearningDictionaries.pdb
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\obj\Debug\netcoreapp2.0\LearningDictionaries.dll
+C:\Users\jason\source\repos\LearningDictionaries\LearningDictionaries\obj\Debug\netcoreapp2.0\LearningDictionaries.pdb

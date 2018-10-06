@@ -2,14 +2,26 @@
 # Example file for variables
 #
 
-# Declare a variable and initialize it
+# # Declare a variable and initialize it
+f=0
+# print(f)
 
 
-# # re-declaring the variable works
+# # # re-declaring the variable works
+# f="abc"
+# print(f)
 
-
-# # ERROR: variables of different types cannot be combined
-
+# # # ERROR: variables of different types cannot be combined
+# print("this is a string" + str(123))
 
 # Global vs. local variables in functions
+def someFunctio():
+        global f
+        f="def"
+        print(f)
 
+someFunctio()
+print(f)
+
+del f
+print(f)

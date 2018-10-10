@@ -37,7 +37,7 @@ def main():
 
     if key.startswith('/'): key = key[1:]
     try:
-        target = db.sql_query_value("SELECT targetURL FROM jurl WHERE shortURL = ?", [ key ]);
+        target = db.sql_query_value("SELECT targetURL FROM jurl WHERE shortURL = ?", [ key ])
     except TypeError as e:
         redirect(default_url)
     else:

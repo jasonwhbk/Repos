@@ -25,7 +25,9 @@ SECRET_KEY = 'cgmb@e896(0vktjh8pv*%ej!wjz2-(@(2&-!wqg8*=j^86ou0&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "jasonwhdjangosample.azurewebsites.net"
+]
 
 
 # Application definition
